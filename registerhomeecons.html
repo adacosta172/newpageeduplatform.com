@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!---Coding By Newpage--->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Registration Form</title>
+    <!---Custom CSS File--->
+    <link rel="stylesheet" href="registrationstyle2.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@2.0.1/dist/css/multi-select-tag.css">
+    <script src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@2.0.1/dist/js/multi-select-tag.js"></script>
+  </head>
+  <body>
+    <section class="container">
+      <header>Registration Form</header>
+      <form action="https://formsubmit.co/conceptnewpage@gmail.com" method="POST" class="form">
+        <div class="input-box">
+            <label>Full Name</label>
+            <input name="Name" type="text" placeholder="Enter full name" required />
+          </div>
+  
+          <div class="input-box">
+            <label>Email Address</label>
+            <input name="email" type="text" placeholder="Enter email address" required />
+          </div>
+  
+          <div class="column">
+            <div class="input-box">
+              <label>Phone Number</label>
+              <input name="Phone Number" type="number" placeholder="Enter phone number" required />
+            </div>
+            <div class="input-box">
+              <label>Birth Date</label>
+              <input name="Birth of Date" type="date" placeholder="Enter birth date" required />
+            </div>
+          </div>
+          <div class="input-box">
+            <label>Gender</label>
+            <input name="Gender" type="text" placeholder="Enter your gender" required />
+          </div>
+        </div>
+        <div class="input-box address">
+          <label>Address</label>
+          <input name="Stret 1" type="text" placeholder="Enter street address" required />
+          <input name="Street 2" type="text" placeholder="Enter street address line 2" required />
+          <div class="column">
+            <div class="select-box">
+              <select name="Country" required>
+                <option hidden>Country</option>
+                <option>America</option>
+                <option>Japan</option>
+                <option>India</option>
+                <option>Ghana</option>
+                <option>Nigeria</option>
+                <option>Tigo</option>
+              </select>
+            </div>
+            <input name="City" type="text" placeholder="Enter your city" required />
+          </div>
+          <div class="column">
+            <input name="Region" type="text" placeholder="Enter your region" required />
+            <input name="Postal" type="number" placeholder="Enter postal code" required />
+          </div>
+          <div class="column">
+            <div class="select-box">
+              <select name="Course" required>
+                <option hidden>Course</option>
+                <option>Home Economics</option>
+              </select>
+            </div>
+            </div>
+            <div class="column">
+             <div class="select-box">
+              <label for="Options">Elective Options</label>
+                <select name="Subject Choice" id="Subject Choice" multiple>
+                    <option name="Biology">Biology</option>
+                    <option name="CLothing and Textiles">Clothing and Textiles</option>
+                    <option name="Economics ">Economics</option>
+                    <option name="Chemistry">Chemistry</option>
+                    <option name="Food & Nutrition">Food and Nutrition</option>
+                    <option name=" GKA">General Knowledge in Arts</option>
+                    <option name="Management in Living ">Management in Living</option>
+                    <option name="French">French</option>
+                    
+
+              </select>
+              </div>
+          </div>
+        </div>
+        <button>Submit</button>
+      </form>
+      <script>
+        new MultiSelectTag('Subject Choice')  // id
+    </script>
+    </section>
+  </body>
+</html>
